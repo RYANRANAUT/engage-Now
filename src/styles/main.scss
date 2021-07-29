@@ -1,16 +1,17 @@
-@import 'override';
-@import 'utility';
-@import 'utility_colors';
+@import "override";
+@import "utility";
+@import "utility_colors";
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #fcfcfc;
+  // background-color: #fcfcfc;
+  background-color: #0b0c10;
 }
 
 html,
@@ -18,6 +19,13 @@ body,
 #root,
 #root > div {
   height: 100%;
+}
+
+h2 {
+  color: #66fcf1;
+}
+p {
+  color: #c5c6c7;
 }
 
 .custom-scroll {
