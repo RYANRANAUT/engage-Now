@@ -35,16 +35,16 @@ const SignIn = () => {
           <Col xs={24} md={12} mdOffset={6}>
             <Panel>
               <div className="text-center">
-                <h2>engage Now</h2>
+                <h2 className="title-header">engage Now</h2>
                 <p>Conversation with the dear ones.</p>
               </div>
 
               <div className="mt-3">
-                <Button block color="blue" onClick={onFbSignIn}>
+                <Button block className="btn login" onClick={onFbSignIn}>
                   <Icon icon="facebook" /> Continue with Facebook
                 </Button>
 
-                <Button block color="green" onClick={onGoogleSignIn}>
+                <Button block className="btn login" onClick={onGoogleSignIn}>
                   <Icon icon="google" /> Continue with Google
                 </Button>
               </div>
