@@ -29,7 +29,7 @@ body,
 }
 
 .btn {
-  border: 3px solid black;
+  border: 3px solid;
   background-color: white;
   color: black;
   padding: 14px 28px;
@@ -43,6 +43,16 @@ body,
   font-weight: bold;
 }
 .login:hover {
+  background-color: #66fcf1;
+  color: #0b0c10;
+}
+
+.sign-out {
+  border-color: #66fcf1;
+  color: #0b0c10;
+  font-weight: bold;
+}
+.sign-out:hover {
   background-color: #66fcf1;
   color: #0b0c10;
 }
