@@ -48,15 +48,13 @@ body,
 }
 
 .sign-out {
-  border-color: #66fcf1;
-  color: #0b0c10;
-  font-weight: bold;
-}
-.sign-out:hover {
-  background-color: #66fcf1;
-  color: #0b0c10;
+  letter-spacing: 2px;
 }
 
+.dashboard {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
 p {
   color: #c5c6c7;
 }

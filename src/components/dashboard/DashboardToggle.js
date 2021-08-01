@@ -16,8 +16,13 @@ const DashboardToggle = () => {
 
   return (
     <>
-      <Button block className="btn login" onClick={open}>
-        <Icon icon="dashboard" /> Dashboard
+      <Button
+        block
+        style={{ backgroundColor: "#45a29e", color: "black" }}
+        className="dashboard"
+        onClick={open}
+      >
+        <Icon icon="dashboard" /> DASHBOARD
       </Button>
 
       <Drawer full={isMobile} show={isOpen} onHide={close} placement="left">
