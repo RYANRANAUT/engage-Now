@@ -5,7 +5,7 @@ const EditableInput = ({
   initialValue,
   onSave,
   label = null,
-  placeholder = "Write your value",
+  placeholder = "Your name",
   emptyMsg = "Input is empty.",
   ...inputProps
 }) => {
@@ -36,7 +36,7 @@ const EditableInput = ({
 
   return (
     <div>
-      {label}
+      <h3>{label}</h3>
       <InputGroup>
         <Input
           {...inputProps}
@@ -45,6 +45,7 @@ const EditableInput = ({
           value={input}
           onChange={onInputChange}
         />
+
         <InputGroup.Button onClick={onEditClick}>
           <Icon icon={isEditable ? "close" : "edit2"} />
         </InputGroup.Button>

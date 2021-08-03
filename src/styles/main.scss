@@ -55,8 +55,39 @@ body,
   font-weight: 600;
   letter-spacing: 3px;
 }
+
+.dashboard-tags {
+  width: 20%;
+}
+.dashboard-buttons {
+  color: black;
+  margin-left: 2%;
+  font-size: 110%;
+  font-weight: normal;
+}
+
+.dashboard-headers {
+  color: black;
+  margin-left: 5%;
+  font-size: 110%;
+  font-weight: normal;
+}
+
 p {
   color: #c5c6c7;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.font-edit {
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .custom-scroll {
