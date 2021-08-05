@@ -18,7 +18,7 @@ const DashboardToggle = () => {
     <>
       <Button
         block
-        style={{ backgroundColor: "#45a29e", color: "black" }}
+        style={{ backgroundColor: "#1f2833", color: "#66FCF1" }}
         className="dashboard"
         onClick={open}
       >
