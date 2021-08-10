@@ -1,16 +1,23 @@
 import React from "react";
 import TimeAgo from "timeago-react";
 
-const RoomItem = () => {
+const RoomItem = ({ room }) => {
+  const { createdAt, name } = room;
   return (
     <div>
       <div className="d-flex justify-content-between align-items-center">
-        <h3 className="text-disappear">Room Name</h3>
-        <TimeAgo datetime={new Date()} className="font-normal" />
+        <h3 className="text-disappear" style={{ color: "#66fcf1" }}>
+          {name}
+        </h3>
+        <TimeAgo
+          datetime={new Date(createdAt)}
+          className="font-normal"
+          style={{ color: "#45a29e" }}
+        />
       </div>
 
       <div className="d-flex align-items-center">
-        <span>No Messages Yet ...</span>
+        <span style={{ color: "#45a29e" }}>No Messages Yet ...</span>
       </div>
     </div>
   );
