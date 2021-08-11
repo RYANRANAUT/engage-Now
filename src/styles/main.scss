@@ -94,6 +94,9 @@ h3 {
   letter-spacing: 2px;
   font-weight: 500;
 }
+.rs-nav-item-content::before {
+  background-color: #1f2833 !important;
+}
 
 .custom-scroll {
   &::-webkit-scrollbar {
