@@ -11,7 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   //background-color: #fcfcfc;
-  background-color: #0b0c10;
+  //background-color: #0b0c10;
+  background-color: black;
 }
 
 html,
@@ -76,6 +77,13 @@ body,
 .new-group {
   font-weight: 200;
   letter-spacing: 3px;
+}
+
+.chat-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 p {

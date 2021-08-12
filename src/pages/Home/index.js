@@ -5,6 +5,7 @@ import Sidebar from "../../components/Sidebar";
 import { RoomsProvider } from "../../context/rooms.context";
 import { useMediaQuery } from "../../misc/custom-hooks";
 import Chat from "./Chat";
+import chatImage from "../../images/chat-image.jpg";
 
 const Home = () => {
   const isDesktop = useMediaQuery("(min-width: 992px)");
@@ -31,7 +32,13 @@ const Home = () => {
             <Route>
               {isDesktop && (
                 <Col xs={24} md={16} className="h-100">
-                  <h6 className="text-center mt-page">Please select chat</h6>
+                  <img
+                    className="chat-img"
+                    src={chatImage}
+                    //src="https://wallpaperaccess.com/full/2095686.jpg"
+                    alt="hey"
+                  />
+                  {/* <h6 className="text-center mt-page">Please select chat</h6> */}
                 </Col>
               )}
             </Route>
