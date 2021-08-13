@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Button, Modal } from "rsuite";
 import { useCurrentRoom } from "../../../context/current-room.context";
 import { useModalState } from "../../../misc/custom-hooks";
@@ -11,21 +11,28 @@ const RoomInfoBtnModal = () => {
   return (
     <>
       <Button appearance="link" className="px-0" onClick={open}>
-        Room Information
+        Group Information
       </Button>
 
       <Modal show={isOpen} onHide={close}>
         <Modal.Header>
-          <Modal.Title>About {name}</Modal.Title>
+          <Modal.Title>
+            <h5>About {name}</h5>
+          </Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
           <h6 className="mb-1">Description</h6>
-          <p>{description}</p>
+          <p style={{ color: "black" }}>{description}</p>
         </Modal.Body>
 
         <Modal.Footer>
-          <Button block onClick={close}>
+          <Button
+            block
+            onClick={close}
+            className="new-group"
+            style={{ backgroundColor: "#1f2833", color: "#66FCF1" }}
+          >
             Close
           </Button>
         </Modal.Footer>
@@ -34,4 +41,4 @@ const RoomInfoBtnModal = () => {
   );
 };
 
-export default RoomInfoBtnModal;
+export default memo(RoomInfoBtnModal);
