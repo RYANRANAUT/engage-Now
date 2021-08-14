@@ -69,14 +69,15 @@ const Bottom = () => {
     <div>
       <InputGroup>
         <Input
+          className="msg-box"
           placeholder="Write a new message here ... "
           value={input}
           onChange={onInputChange}
           onKeyDown={onKeyDown}
         />
         <InputGroup.Button
-          color="blue"
-          appearance="primary"
+          className="msg-send-btn"
+          appearance="dark"
           onClick={onClickSend}
           disabled={isLoading}
         >
